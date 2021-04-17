@@ -1,11 +1,12 @@
 import React from 'react'
 
+import { AuthContext } from './auth/AuthContext'
 import { AppRouter } from './routers/AppRouter'
 
 export const JournalApp = () => {
     return (
-        <div>
+        <AuthContext.Provider value={{}}>
             <AppRouter />
-        </div>
+        </AuthContext.Provider>
     )
 }

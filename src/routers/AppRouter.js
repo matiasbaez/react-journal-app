@@ -14,12 +14,12 @@ export const AppRouter = () => {
 
     return (
         <Router>
-            <div>
+            <>
                 <Switch>
                     <PublicRoute path="/auth" component={AuthRouter} isLogged={false} />
                     <PrivateRoute path="/" component={JournalScreen} isLogged={false} />
                 </Switch>
-            </div>
+            </>
         </Router>
     )
 }
